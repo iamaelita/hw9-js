@@ -47,7 +47,6 @@ function timeOut() {
   const getTimeComponents = selectedDate - new Date();
 
   if (getTimeComponents <= 0) {
-    Notiflix.Notify.success('Час вийшов!');
     clearInterval(timerId);
     return;
   }
